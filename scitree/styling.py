@@ -27,6 +27,7 @@ def _color(style, ftype, color=31, inner=True):
 
     return style
 
+
 def _color_file(style, color=31, inner=True):
 
     return _color(style=style, ftype="file", color=color, inner=inner)
@@ -43,15 +44,15 @@ def natsort_scitree_style(item):
     item = Path(item)
 
     style = {
-        'split': '├── ',
-        'extend': '│   ',
-        'space': '    ',
-        'final': '└── ',
-        'folderend': '/',
+        "split": "├── ",
+        "extend": "│   ",
+        "space": "    ",
+        "final": "└── ",
+        "folderend": "/",
     }
 
     # Color coding
-    if item.suffix == '.py':
+    if item.suffix == ".py":
         style = _color_file(style)
 
     if item.stem.lower().startswith("readme"):

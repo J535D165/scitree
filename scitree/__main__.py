@@ -1,9 +1,10 @@
 import argparse
 import logging
+
 from setuptools_scm import get_version
 
-
 from scitree.tree import scitree
+
 
 def main():
 
@@ -13,7 +14,7 @@ def main():
     )
     parser.add_argument(
         "dir",
-        nargs='?',
+        nargs="?",
         default=".",
         help="Directory.",
     )
@@ -22,7 +23,6 @@ def main():
         action="store_true",
         help="Directory.",
     )
-
 
     # version
     parser.add_argument(
@@ -37,8 +37,8 @@ def main():
     options = {}
 
     if not args.a:
-        options['exclude_folders'] = [".git"]
-        options['regex'] = True
+        options["exclude_folders"] = [".git"]
+        options["regex"] = True
 
     scitree(args.dir, **options)
 
