@@ -21,3 +21,10 @@ sh jobs.sh
 ```python
 files = list(map(str,Path(".").glob("**/*")))
 ```
+
+## With Datahugger
+
+```
+datahugger 10.5281/zenodo.4161444 example_GISANS/
+unzip data.zip dwba_model_package.zip
+```

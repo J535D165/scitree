@@ -82,6 +82,10 @@ example_makita/
 └── jobs.sh
 ```
 
+### Other examples
+
+10.5281/zenodo.4161444
+
 
 ### `scitree` function for Python
 
