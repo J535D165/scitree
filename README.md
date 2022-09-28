@@ -1,4 +1,6 @@
-# Scitree - Sort files optimized for science
+[![scitree_repocard.png](https://github.com/J535D165/scitree/raw/main/scitree_repocard.png)](github.com/j535d165/scitree)
+
+# Scitree - Like tree, but optimized for science
 
 WIP
 
