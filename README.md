@@ -1,6 +1,6 @@
 [![scitree_repocard.png](https://github.com/J535D165/scitree/raw/main/scitree_repocard.png)](github.com/j535d165/scitree)
 
-# Scitree - Like tree, but optimized for science
+# Scitree - Like `tree`, but optimized for science
 
 > In computing, tree is a recursive directory listing command or program that
 > produces a depth-indented listing of files. [Wikipedia, 2022](https://en.wikipedia.org/wiki/Tree_(command)).
