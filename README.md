@@ -2,11 +2,17 @@
 
 # Scitree - Like tree, but optimized for science
 
-WIP
+> In computing, tree is a recursive directory listing command or program that
+> produces a depth-indented listing of files. [Wikipedia, 2022](https://en.wikipedia.org/wiki/Tree_(command)).
+
+Scitree is like tree, but different. Instead of sorting content on its name,
+scitree sorts and highlights given opiniated scientific principles. In this
+way, you can inspect directory listings more easily.
 
 ## The zen of scisort
 
-
+Scitree is based on [scisort](https://github.com/j535d165/scisort), a Python
+package to sort file paths based on scientific principles.
 
 ## Installation
 
