@@ -95,7 +95,7 @@ example_makita/
 
 The `scitree` function in Python prints the tree for the current folder (`"."`).
 
-```sh
+```python
 from scitree import scitree
 
 scitree()
