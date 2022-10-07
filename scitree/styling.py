@@ -4,26 +4,9 @@ SCRIPT_COLOR = 31
 README_COLOR = 34
 DATA_COLOR = 32
 
-CODE_SUFFIXES = [
-    ".py",
-    ".R",
-    ".m",
-    ".js",
-    ".sh",
-    ".ipynb",
-    ".cpp",
-    ".h"
-]
+CODE_SUFFIXES = [".py", ".R", ".m", ".js", ".sh", ".ipynb", ".cpp", ".h"]
 
-DATA_SUFFIXES = [
-    ".csv",
-    ".tab",
-    ".xlsx",
-    ".xls",
-    ".json",
-    ".zip",
-    ".dat"
-]
+DATA_SUFFIXES = [".csv", ".tab", ".xlsx", ".xls", ".json", ".zip", ".dat"]
 
 
 def _color(style, ftype, color=31, inner=True):

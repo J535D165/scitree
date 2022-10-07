@@ -23,7 +23,11 @@ def main():
         action="store_true",
         help="Directory.",
     )
-
+    parser.add_argument(
+        "-g",
+        action="store_true",
+        help="Show files and folders from gitignore file.",
+    )
     # version
     parser.add_argument(
         "-V",
@@ -36,9 +40,11 @@ def main():
 
     options = {}
 
+    if args.g:
+        options["gitignore"] = False
+
     if not args.a:
         options["exclude_folders"] = [".git"]
-        options["regex"] = True
 
     scitree(args.dir, **options)
 
