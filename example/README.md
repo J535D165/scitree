@@ -22,7 +22,9 @@ sh jobs.sh
 files = list(map(str,Path(".").glob("**/*")))
 ```
 
-## With Datahugger
+## 10.5281/zenodo.4161444 (With Datahugger)
+
+Install datahugger (`pip install datahugger`)
 
 ```
 datahugger 10.5281/zenodo.4161444 example_GISANS/
