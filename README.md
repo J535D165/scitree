@@ -42,50 +42,52 @@ scitree example/example_makita
 example_makita/
 ├── README.md
 ├── LICENSE.txt
+├── jobs.sh
 ├── data/
 │   └── Bos_2018.csv
 ├── scripts/
 │   ├── get_plot.py
 │   ├── merge_descriptives.py
 │   └── merge_metrics.py
-├── output/
-│   ├── simulation/
-│   │   └── Bos_2018/
-│   │       ├── descriptives/
-│   │       │   ├── data_stats_Bos_2018.json
-│   │       │   ├── wordcloud_Bos_2018.png
-│   │       │   ├── wordcloud_irrelevant_Bos_2018.png
-│   │       │   └── wordcloud_relevant_Bos_2018.png
-│   │       ├── metrics_sim_Bos_2018_0.json
-│   │       ├── metrics_sim_Bos_2018_6.json
-│   │       ├── metrics_sim_Bos_2018_559.json
-│   │       ├── metrics_sim_Bos_2018_1640.json
-│   │       ├── metrics_sim_Bos_2018_3154.json
-│   │       ├── metrics_sim_Bos_2018_3518.json
-│   │       ├── metrics_sim_Bos_2018_3519.json
-│   │       ├── metrics_sim_Bos_2018_3721.json
-│   │       ├── metrics_sim_Bos_2018_4612.json
-│   │       ├── metrics_sim_Bos_2018_4699.json
-│   │       ├── metrics_sim_Bos_2018_5673.json
-│   │       ├── plot_recall_sim_Bos_2018.png
-│   │       └── state_files/
-│   │           ├── sim_Bos_2018_0.asreview
-│   │           ├── sim_Bos_2018_6.asreview
-│   │           ├── sim_Bos_2018_559.asreview
-│   │           ├── sim_Bos_2018_1640.asreview
-│   │           ├── sim_Bos_2018_3154.asreview
-│   │           ├── sim_Bos_2018_3518.asreview
-│   │           ├── sim_Bos_2018_3519.asreview
-│   │           ├── sim_Bos_2018_3721.asreview
-│   │           ├── sim_Bos_2018_4612.asreview
-│   │           ├── sim_Bos_2018_4699.asreview
-│   │           └── sim_Bos_2018_5673.asreview
-│   └── tables/
-│       ├── data_descriptives.csv
-│       ├── data_descriptives.xlsx
-│       ├── data_metrics.csv
-│       └── data_metrics.xlsx
-└── jobs.sh
+└── output/
+    ├── simulation/
+    │   └── Bos_2018/
+    │       ├── metrics_sim_Bos_2018_0.json
+    │       ├── metrics_sim_Bos_2018_6.json
+    │       ├── metrics_sim_Bos_2018_559.json
+    │       ├── metrics_sim_Bos_2018_1640.json
+    │       ├── metrics_sim_Bos_2018_3154.json
+    │       ├── metrics_sim_Bos_2018_3518.json
+    │       ├── metrics_sim_Bos_2018_3519.json
+    │       ├── metrics_sim_Bos_2018_3721.json
+    │       ├── metrics_sim_Bos_2018_4612.json
+    │       ├── metrics_sim_Bos_2018_4699.json
+    │       ├── metrics_sim_Bos_2018_5673.json
+    │       ├── plot_recall_sim_Bos_2018.png
+    │       ├── descriptives/
+    │       │   ├── wordcloud_Bos_2018.png
+    │       │   ├── wordcloud_irrelevant_Bos_2018.png
+    │       │   ├── wordcloud_relevant_Bos_2018.png
+    │       │   └── data_stats_Bos_2018.json
+    │       └── state_files/
+    │           ├── sim_Bos_2018_0.asreview
+    │           ├── sim_Bos_2018_6.asreview
+    │           ├── sim_Bos_2018_559.asreview
+    │           ├── sim_Bos_2018_1640.asreview
+    │           ├── sim_Bos_2018_3154.asreview
+    │           ├── sim_Bos_2018_3518.asreview
+    │           ├── sim_Bos_2018_3519.asreview
+    │           ├── sim_Bos_2018_3721.asreview
+    │           ├── sim_Bos_2018_4612.asreview
+    │           ├── sim_Bos_2018_4699.asreview
+    │           └── sim_Bos_2018_5673.asreview
+    └── tables/
+        ├── data_descriptives.csv
+        ├── data_descriptives.xlsx
+        ├── data_metrics.csv
+        └── data_metrics.xlsx
+
+8 directories, 38 files
 ```
 
 ### Other examples
