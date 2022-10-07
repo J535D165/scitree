@@ -90,27 +90,16 @@ example_makita/
 8 directories, 38 files
 ```
 
-### Other examples
-
-10.5281/zenodo.4161444
-
 
 ### `scitree` function for Python
 
-The `scitree` function in Python prints the tree.
+The `scitree` function in Python prints the tree for the current folder (`"."`).
 
 ```sh
 from scitree import scitree
 
-scitree(".")
+scitree()
 ```
-
-<!--
-cd example/example_makita
-scitree
-
-scitree example/example_makita
- -->
 
 
 ## License

@@ -10,7 +10,7 @@ from scitree.styling import DATA_COLOR
 
 
 def scitree(
-    p,
+    p=".",
     sort=True,
     sort_key=scisort_keygen,
     formatter=natsort_scitree_style,
