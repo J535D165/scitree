@@ -1,4 +1,8 @@
-[![scitree_repocard.png](https://github.com/J535D165/scitree/raw/main/scitree_repocard.svg)](github.com/j535d165/scitree)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/J535D165/scitree/raw/main/scitree_repocard_dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/J535D165/scitree/raw/main/scitree_repocard.svg">
+  <img alt="Scisort - Sort files in science projects." src="https://github.com/J535D165/scitree/raw/main/scitree_repocard.svg">
+</picture>
 
 # Scitree - Like `tree`, but optimized for science
 
