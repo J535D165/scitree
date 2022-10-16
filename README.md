@@ -126,8 +126,6 @@ scitree()
 
 ## Contact
 
-## Contact
-
 Feel free to reach out with questions, remarks, and suggestions. The
 [issue tracker](/issues) is a good starting point. You can also email me at
 [jonathandebruinos@gmail.com](mailto:jonathandebruinos@gmail.com).
