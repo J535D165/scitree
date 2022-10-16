@@ -13,10 +13,24 @@ Scitree is like tree, but different. Instead of sorting content on its name,
 scitree sorts and highlights given opiniated scientific principles. In this
 way, you can inspect directory listings more easily.
 
-## The zen of scisort
-
 Scitree is based on [scisort](https://github.com/j535d165/scisort), a Python
 package to sort file paths based on scientific principles.
+
+## Philosophy
+
+Philosophy of [scisort](https://github.com/j535d165/scisort) and scitree:
+
+- Read the README first, therefore I'm on top
+- Before I install or use the content, I open the [LICENSE](https://choosealicense.com/).
+- Files first, folders second
+- Numbered files are [naturally sorted](https://en.wikipedia.org/wiki/Natural_sort_order)
+- I love [intuitive and reproducible project structures](https://doi.org/10.1371/journal.pcbi.1005510)
+- Follow the order of execution where possible
+- I ignore, what git ignores\*
+
+*\* Only for [`scitree`](https://github.com/J535D165/scitree).*
+
+For more information about the structure, see [https://github.com/J535D165/scisort/scisort/keygen.py](scisort/keygen.py). 
 
 ## Installation
 
