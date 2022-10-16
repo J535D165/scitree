@@ -126,4 +126,8 @@ scitree()
 
 ## Contact
 
-Scitree is developed and maintained by Jonathan de Bruin ([jonathandebruinos@gmail.com](email:jonathandebruinos@gmail.com)).
+## Contact
+
+Feel free to reach out with questions, remarks, and suggestions. The
+[issue tracker](/issues) is a good starting point. You can also email me at
+[jonathandebruinos@gmail.com](mailto:jonathandebruinos@gmail.com).
