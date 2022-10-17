@@ -57,7 +57,7 @@ scitree example/example_makita
  -->
 
 ```sh
-example_makita/
+./
 ├── README.md
 ├── LICENSE.txt
 ├── jobs.sh
