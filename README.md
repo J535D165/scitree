@@ -30,7 +30,7 @@ Philosophy of [scisort](https://github.com/j535d165/scisort) and scitree:
 
 *\* Only for [`scitree`](https://github.com/J535D165/scitree).*
 
-For more information about the structure, see [https://github.com/J535D165/scisort/scisort/keygen.py](scisort/keygen.py). 
+For more information about the structure, see [scisort/scisort/keygen.py](https://github.com/J535D165/scisort/blob/main/scisort/keygen.py). 
 
 ## Installation
 
