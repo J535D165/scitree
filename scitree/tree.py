@@ -14,7 +14,7 @@ from scitree.styling import natsort_scitree_style
 def scitree(
     p=".",
     sort=True,
-    sort_key=scisort_keygen,
+    sort_key=scisort_keygen(),
     formatter=natsort_scitree_style,
     gitignore=True,
     first="files",

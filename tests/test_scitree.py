@@ -14,4 +14,4 @@ tree_expected = [
 
 def test_keygen():
 
-    assert sorted(tree, key=scitree_keygen) == tree_expected
+    assert sorted(tree, key=scitree_keygen()) == tree_expected
