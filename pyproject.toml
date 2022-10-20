@@ -34,3 +34,4 @@ requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
 packages = ["scitree"]
 
 [tool.setuptools_scm]
+write_to = "scitree/_version.py"
