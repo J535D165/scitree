@@ -1,8 +1,6 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/J535D165/scitree/raw/main/scitree_repocard_dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/J535D165/scitree/raw/main/scitree_repocard.svg">
-  <img alt="Scisort - Sort files in science projects." src="https://github.com/J535D165/scitree/raw/main/scitree_repocard.svg">
-</picture>
+<p align="center">
+  <img alt="Scitree - Like tree, but optimized for science" src="https://github.com/J535D165/scitree/raw/main/scitree_repocard.svg">
+</p>
 
 # Scitree - Like `tree`, but optimized for science
 
