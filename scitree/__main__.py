@@ -1,5 +1,4 @@
 import argparse
-import logging
 
 from setuptools_scm import get_version
 

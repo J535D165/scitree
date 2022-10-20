@@ -2,8 +2,8 @@ import os
 from pathlib import Path
 
 import gitignorefile
-import seedir as sd
 from scisort import scisort_keygen
+import seedir as sd
 
 from scitree.styling import DATA_COLOR
 from scitree.styling import README_COLOR
@@ -23,7 +23,9 @@ def scitree(
 
     if gitignore and Path(p, ".gitignore").exists():
         gi_matcher = gitignorefile.parse(Path(p, ".gitignore"))
-        gi_mask = lambda x: not gi_matcher(x)
+
+        def gi_mask(x):
+            return not gi_matcher(x)
     else:
         gi_mask = None
 
@@ -45,6 +47,4 @@ def scitree(
     n_folders = len(set(folders))
 
     print(f"\n{n_folders} directories, {n_files} files")
-    print(
-        f"\x1b[{README_COLOR}mREADME\x1b[0m \x1b[{DATA_COLOR}mData\x1b[0m \x1b[{SCRIPT_COLOR}mCode\x1b[0m"
-    )
+    print(f"\x1b[{README_COLOR}mREADME\x1b[0m \x1b[{DATA_COLOR}mData\x1b[0m \x1b[{SCRIPT_COLOR}mCode\x1b[0m")  # noqa

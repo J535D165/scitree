@@ -1,4 +1,4 @@
-from scitree import scitree_keygen
+from scisort import scisort_keygen
 
 tree = ["data", "README.md", "scripts", "installation.R", "requirements.txt", "tests"]
 
@@ -14,4 +14,4 @@ tree_expected = [
 
 def test_keygen():
 
-    assert sorted(tree, key=scitree_keygen()) == tree_expected
+    assert sorted(tree, key=scisort_keygen()) == tree_expected
