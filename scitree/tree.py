@@ -43,7 +43,6 @@ def scitree(
     **kwargs
 ):
 
-    print(kwargs)
     if gitignore and Path(p, ".gitignore").exists():
         gi_matcher = gitignorefile.parse(Path(p, ".gitignore"))
 
