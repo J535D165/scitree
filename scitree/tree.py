@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 import gitignorefile
@@ -11,6 +10,27 @@ from scitree.styling import SCRIPT_COLOR
 from scitree.styling import natsort_scitree_style
 
 
+def _file_count(d, n_files=0, n_folders=0, mask=None, exclude_folders=[]):
+
+    for f in Path(d).iterdir():
+
+        if mask is None or not mask(str(f)):
+            if f.is_file():
+                n_files += 1
+            else:
+                if str(f) not in exclude_folders:
+                    n_folders += 1
+                    n_files, n_folders = _file_count(
+                        f,
+                        n_files,
+                        n_folders,
+                        mask=mask,
+                        exclude_folders=exclude_folders,
+                    )
+
+    return n_files, n_folders
+
+
 def scitree(
     p=".",
     sort=True,
@@ -18,7 +38,8 @@ def scitree(
     formatter=natsort_scitree_style,
     gitignore=True,
     first="files",
-    **kwargs,
+    exclude_folders=[".git"],
+    **kwargs
 ):
 
     if gitignore and Path(p, ".gitignore").exists():
@@ -26,6 +47,7 @@ def scitree(
 
         def gi_mask(x):
             return not gi_matcher(x)
+
     else:
         gi_mask = None
 
@@ -36,15 +58,17 @@ def scitree(
         formatter=formatter,
         first=first,
         mask=gi_mask,
-        **kwargs,
+        exclude_folders=exclude_folders,
+        **kwargs
     )
 
-    n_files = 0
-    folders = []
-    for root_dir, cur_dir, files in os.walk(p):
-        n_files += len(files)
-        folders.extend(cur_dir)
-    n_folders = len(set(folders))
+    n_files, n_folders = _file_count(
+        p,
+        n_files=0,
+        n_folders=0,
+        mask=gi_mask,
+        exclude_folders=exclude_folders,
+    )
 
     print(f"\n{n_folders} directories, {n_files} files")
     print(f"\x1b[{README_COLOR}mREADME\x1b[0m \x1b[{DATA_COLOR}mData\x1b[0m \x1b[{SCRIPT_COLOR}mCode\x1b[0m")  # noqa
