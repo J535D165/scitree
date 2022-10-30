@@ -23,8 +23,7 @@ def test_keygen():
 
 def test_root_tree():
 
-    assert "files" in scitree()
-    assert "folders" in scitree()
+    scitree()
 
 
 def test_root_tree_pathlib():
