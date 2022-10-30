@@ -52,7 +52,7 @@ def scitree(
         gi_mask = None
 
     sd.seedir(
-        p,
+        str(p),
         sort=sort,
         sort_key=sort_key,
         formatter=formatter,

@@ -1,4 +1,8 @@
+from pathlib import Path
+
 from scisort import scisort_keygen
+
+from scitree import scitree
 
 tree = ["data", "README.md", "scripts", "installation.R", "requirements.txt", "tests"]
 
@@ -15,3 +19,14 @@ tree_expected = [
 def test_keygen():
 
     assert sorted(tree, key=scisort_keygen()) == tree_expected
+
+
+def test_root_tree():
+
+    assert "files" in scitree()
+    assert "folders" in scitree()
+
+
+def test_root_tree_pathlib():
+
+    assert scitree() == scitree(Path("."))
