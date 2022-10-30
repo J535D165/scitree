@@ -4,6 +4,8 @@
 
 # Scitree - Like `tree`, but optimized for science
 
+![PyPI](https://img.shields.io/pypi/v/scitree) [![DOI](https://zenodo.org/badge/541578065.svg)](https://zenodo.org/badge/latestdoi/541578065)
+
 > In computing, tree is a recursive directory listing command or program that
 > produces a depth-indented listing of files. [Wikipedia, 2022](https://en.wikipedia.org/wiki/Tree_(command)).
 
