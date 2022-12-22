@@ -6,16 +6,20 @@ README_COLOR = 34
 DATA_COLOR = 32
 FIGURE_COLOR = 33
 FOLDER_COLOR = 30
+SERIAL_COLOR = 35   # magenta
 
 SCRIPT_ICON = '\U0001F4C4'  # 📄
 README_ICON = '\U0001F4D6'  # 📖
 DATA_ICON = '\U0001F4DC'    # 📜
 FIGURE_ICON = '\U0001F4CA'  # 📊
 FOLDER_ICON = '\U0001F4C1'  # 📁
+SERIAL_ICON = '\U0001F4E6'  # 📦
 
 CODE_SUFFIXES = [".py", ".R", ".m", ".js", ".sh", ".ipynb", ".cpp", ".h", ".bat"]
 DATA_SUFFIXES = [".csv", ".tab", ".xlsx", ".xls", ".json", ".zip", ".dat" ".txt", ".tsv"]
 FIGURE_SUFFIXES = [".png", ".jpg", ".jpeg", ".svg", ".pdf", ".eps", ".tiff", ".tif" ".gif" ".bmp"]
+SERIALDATA_SUFFIXES = [".rds", ".pkl", ".bin", ".h5", ".hdf5",
+                       ".mat", ".sav", ".dta", ".sas7bdat", ".feather", ".parquet"]
 
 
 def _color(style, ftype, color=31, inner=True):
@@ -102,6 +106,11 @@ def natsort_scitree_style(item, **kwargs):
         style = _color_file(style, color=FIGURE_COLOR)
         if kwargs.get("icons", True):
             style = _icon_file(style, icon=FIGURE_ICON)
+
+    if item.suffix in SERIALDATA_SUFFIXES:
+        style = _color_file(style, color=SERIAL_COLOR)
+        if kwargs.get("icons", True):
+            style = _icon_file(style, icon=SERIAL_ICON)
 
     if item.stem.lower().startswith("readme"):
         style = _color_file(style, color=README_COLOR)
