@@ -48,7 +48,7 @@ def scitree(
     gitignore=True,
     first="files",
     exclude_folders=[".git"],
-    icons=True,
+    icons=False,
     **kwargs
 ):
 
@@ -65,7 +65,7 @@ def scitree(
         str(p),
         sort=sort,
         sort_key=sort_key,
-        formatter=formatter,
+        formatter=lambda item: formatter(item, icons=icons),
         first=first,
         mask=gi_mask,
         exclude_folders=exclude_folders,
