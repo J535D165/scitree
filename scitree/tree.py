@@ -8,6 +8,11 @@ from scitree.styling import DATA_COLOR
 from scitree.styling import README_COLOR
 from scitree.styling import SCRIPT_COLOR
 from scitree.styling import FIGURE_COLOR
+from scitree.styling import DATA_ICON
+from scitree.styling import README_ICON
+from scitree.styling import SCRIPT_ICON
+from scitree.styling import FIGURE_ICON
+
 from scitree.styling import natsort_scitree_style
 
 
@@ -73,5 +78,5 @@ def scitree(
     )
 
     print(f"\n{n_folders} directories, {n_files} files")
-    print(f"\x1b[{README_COLOR}mREADME\x1b[0m \x1b[{DATA_COLOR}mData\x1b[0m \x1b[{SCRIPT_COLOR}mCode\x1b[0m \x1b[{FIGURE_COLOR}mFigures\x1b[0m")  # noqa
+    print(f"{README_ICON}\x1b[{README_COLOR}mREADME {DATA_ICON}\x1b[0m \x1b[{DATA_COLOR}mData\x1b[0m {SCRIPT_ICON}\x1b[{SCRIPT_COLOR}mCode\x1b[0m {FIGURE_ICON}\x1b[{FIGURE_COLOR}mFigures\x1b[0m")  # noqa
 
