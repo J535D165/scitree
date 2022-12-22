@@ -80,7 +80,7 @@ def scitree(
         exclude_folders=exclude_folders,
     )
 
-    print(f"\n{n_folders} directories, {n_files} files")
+    print(f"\n{n_folders} {'directory' if n_folders == 1 else 'directories'} , {n_files} files")
     print(f"""\
 {README_ICON if icons else ''}\x1b[{README_COLOR}mREADME \x1b[0m\
 {DATA_ICON if icons else ''}\x1b[{DATA_COLOR}mData \x1b[0m\
