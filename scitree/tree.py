@@ -73,4 +73,5 @@ def scitree(
     )
 
     print(f"\n{n_folders} directories, {n_files} files")
+    print(f"\x1b[{README_COLOR}mREADME\x1b[0m \x1b[{DATA_COLOR}mData\x1b[0m \x1b[{SCRIPT_COLOR}mCode\x1b[0m \x1b[{FIGURE_COLOR}mFigures\x1b[0m")  # noqa
 
