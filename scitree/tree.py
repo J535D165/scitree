@@ -7,6 +7,7 @@ import seedir as sd
 from scitree.styling import DATA_COLOR
 from scitree.styling import README_COLOR
 from scitree.styling import SCRIPT_COLOR
+from scitree.styling import FIGURE_COLOR
 from scitree.styling import natsort_scitree_style
 
 
@@ -39,6 +40,7 @@ def scitree(
     gitignore=True,
     first="files",
     exclude_folders=[".git"],
+    icons=True,
     **kwargs
 ):
 
@@ -71,4 +73,4 @@ def scitree(
     )
 
     print(f"\n{n_folders} directories, {n_files} files")
-    print(f"\x1b[{README_COLOR}mREADME\x1b[0m \x1b[{DATA_COLOR}mData\x1b[0m \x1b[{SCRIPT_COLOR}mCode\x1b[0m")  # noqa
+
