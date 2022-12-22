@@ -13,6 +13,7 @@ from scitree.styling import DATA_ICON
 from scitree.styling import README_ICON
 from scitree.styling import SCRIPT_ICON
 from scitree.styling import FIGURE_ICON
+from scitree.styling import FOLDER_ICON
 from scitree.styling import SERIAL_ICON
 
 from scitree.styling import natsort_scitree_style
