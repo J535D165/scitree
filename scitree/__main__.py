@@ -27,6 +27,11 @@ def main():
         action="store_true",
         help="Show files and folders from gitignore file.",
     )
+    parser.add_argument(
+        "-e",
+        action="store_true",
+        help="Add icons to files and folders.",
+    )
     # version
     parser.add_argument(
         "-V",
@@ -44,6 +49,8 @@ def main():
 
     if not args.a:
         options["exclude_folders"] = [".git"]
+
+    options["icons"] = args.e
 
     scitree(args.dir, **options)
 
