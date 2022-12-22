@@ -81,4 +81,11 @@ def scitree(
     )
 
     print(f"\n{n_folders} directories, {n_files} files")
-    print(f"{README_ICON}\x1b[{README_COLOR}mREADME {DATA_ICON}\x1b[0m \x1b[{DATA_COLOR}mData\x1b[0m {SCRIPT_ICON}\x1b[{SCRIPT_COLOR}mCode\x1b[0m {FIGURE_ICON}\x1b[{FIGURE_COLOR}mFigures\x1b[0m {FOLDER_ICON}Folder {SERIAL_ICON}\x1b[{SERIAL_COLOR}mSerial Data ")  # noqa
+    print(f"""\
+{README_ICON if icons else ''}\x1b[{README_COLOR}mREADME \x1b[0m\
+{DATA_ICON if icons else ''}\x1b[{DATA_COLOR}mData \x1b[0m\
+{SCRIPT_ICON if icons else ''}\x1b[{SCRIPT_COLOR}mCode \x1b[0m\
+{FIGURE_ICON if icons else ''}\x1b[{FIGURE_COLOR}mFigures \x1b[0m\
+{SERIAL_ICON if icons else ''}\x1b[{SERIAL_COLOR}mSerial Data \x1b[0m\
+{FOLDER_ICON if icons else ''}Folder\
+    """)
