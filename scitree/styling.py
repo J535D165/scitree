@@ -1,11 +1,10 @@
 from pathlib import Path
 
 # colors are blue, green, red, yellow
-SCRIPT_COLOR = 31
-README_COLOR = 34
-DATA_COLOR = 32
-FIGURE_COLOR = 33
-FOLDER_COLOR = 30
+SCRIPT_COLOR = 31   # red
+README_COLOR = 34   # blue
+DATA_COLOR = 32     # green
+FIGURE_COLOR = 33   # yellow
 SERIAL_COLOR = 35   # magenta
 
 SCRIPT_ICON = '\U0001F4C4'  # 📄
@@ -16,7 +15,7 @@ FOLDER_ICON = '\U0001F4C1'  # 📁
 SERIAL_ICON = '\U0001F4E6'  # 📦
 
 CODE_SUFFIXES = [".py", ".R", ".m", ".js", ".sh", ".ipynb", ".cpp", ".h", ".bat"]
-DATA_SUFFIXES = [".csv", ".tab", ".xlsx", ".xls", ".json", ".zip", ".dat" ".txt", ".tsv"]
+DATA_SUFFIXES = [".csv", ".tab", ".xlsx", ".xls", ".json", ".zip", ".dat" ".txt", ".tsv", ".ods"]
 FIGURE_SUFFIXES = [".png", ".jpg", ".jpeg", ".svg", ".pdf", ".eps", ".tiff", ".tif" ".gif" ".bmp"]
 SERIALDATA_SUFFIXES = [".rds", ".pkl", ".bin", ".h5", ".hdf5",
                        ".mat", ".sav", ".dta", ".sas7bdat", ".feather", ".parquet"]
