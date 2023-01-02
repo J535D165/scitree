@@ -35,3 +35,4 @@ packages = ["scitree"]
 
 [tool.setuptools_scm]
 write_to = "scitree/_version.py"
+fallback_version = "unknown"

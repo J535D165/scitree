@@ -1,7 +1,6 @@
 import argparse
 
-from setuptools_scm import get_version
-
+from scitree._version import __version__
 from scitree.tree import scitree
 
 
@@ -32,7 +31,7 @@ def main():
         "-V",
         "--version",
         action="version",
-        version="%(prog)s {version}".format(version=get_version()),
+        version="%(prog)s {version}".format(version=__version__),
     )
 
     args, _ = parser.parse_known_args()
