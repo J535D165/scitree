@@ -7,6 +7,15 @@ import seedir as sd
 from scitree.styling import DATA_COLOR
 from scitree.styling import README_COLOR
 from scitree.styling import SCRIPT_COLOR
+from scitree.styling import FIGURE_COLOR
+from scitree.styling import SERIAL_COLOR
+from scitree.styling import DATA_ICON
+from scitree.styling import README_ICON
+from scitree.styling import SCRIPT_ICON
+from scitree.styling import FIGURE_ICON
+from scitree.styling import FOLDER_ICON
+from scitree.styling import SERIAL_ICON
+
 from scitree.styling import natsort_scitree_style
 
 
@@ -39,6 +48,7 @@ def scitree(
     gitignore=True,
     first="files",
     exclude_folders=[".git"],
+    icons=False,
     **kwargs
 ):
 
@@ -55,7 +65,7 @@ def scitree(
         str(p),
         sort=sort,
         sort_key=sort_key,
-        formatter=formatter,
+        formatter=lambda item: formatter(item, icons=icons),
         first=first,
         mask=gi_mask,
         exclude_folders=exclude_folders,
@@ -70,5 +80,12 @@ def scitree(
         exclude_folders=exclude_folders,
     )
 
-    print(f"\n{n_folders} directories, {n_files} files")
-    print(f"\x1b[{README_COLOR}mREADME\x1b[0m \x1b[{DATA_COLOR}mData\x1b[0m \x1b[{SCRIPT_COLOR}mCode\x1b[0m")  # noqa
+    print(f"\n{n_folders} {'directory' if n_folders == 1 else 'directories'} , {n_files} files")
+    print(f"""\
+{README_ICON if icons else ''}\x1b[{README_COLOR}mREADME \x1b[0m\
+{DATA_ICON if icons else ''}\x1b[{DATA_COLOR}mData \x1b[0m\
+{SCRIPT_ICON if icons else ''}\x1b[{SCRIPT_COLOR}mCode \x1b[0m\
+{FIGURE_ICON if icons else ''}\x1b[{FIGURE_COLOR}mFigures \x1b[0m\
+{SERIAL_ICON if icons else ''}\x1b[{SERIAL_COLOR}mSerial Data \x1b[0m\
+{FOLDER_ICON if icons else ''}Folder\
+    """)
