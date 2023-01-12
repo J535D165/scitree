@@ -59,8 +59,7 @@ def scitree(
             for f in exclude_folders:
                 if x == str(Path(p).absolute()) + "\\" + f:
                     return False
-            else:
-                return not gi_matcher(x)
+            return not gi_matcher(x)
 
     else:
         gi_mask = None
