@@ -23,7 +23,7 @@ def _file_count(d, n_files=0, n_folders=0, mask=None, exclude_folders=[]):
 
     for f in Path(d).iterdir():
 
-        if mask is None or not mask(str(f)):
+        if mask is None or mask(str(f)):
             if f.is_file():
                 n_files += 1
             else:
@@ -47,7 +47,7 @@ def scitree(
     formatter=natsort_scitree_style,
     gitignore=True,
     first="files",
-    exclude_folders=[".git"],
+    exclude_folders=[],
     icons=False,
     **kwargs
 ):
@@ -56,7 +56,11 @@ def scitree(
         gi_matcher = gitignorefile.parse(Path(p, ".gitignore"))
 
         def gi_mask(x):
-            return not gi_matcher(x)
+            for f in exclude_folders:
+                if x == str(Path(p).absolute()) + "\\" + f:
+                    return False
+            else:
+                return not gi_matcher(x)
 
     else:
         gi_mask = None
